@@ -1,0 +1,32 @@
+<div id="<%= dom_id job_seeker %>">
+
+<%= image_tag job_seeker.profile_image ,height: "100",width: "100" %>
+<%= raw @qr_job_seeker %>
+
+
+  <p>
+    <strong>Full name:</strong>
+    <%= job_seeker.full_name %>
+  </p>
+
+  <p>
+    <strong>Email:</strong>
+    <%= job_seeker.email %>
+  </p>
+
+  <p>
+    <strong>Date of birth:</strong>
+    <%= job_seeker.date_of_birth %>
+  </p>
+
+  <p>
+    <strong>Mobile:</strong>
+    <%= job_seeker.mobile %>
+  </p>
+
+  <p>
+    <strong>Address:</strong>
+    <%= job_seeker.address %>
+  </p>
+
+</div>
