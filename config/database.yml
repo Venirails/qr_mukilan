@@ -82,4 +82,4 @@ production:
   <<: *default
   database: job_connect_production
   username: job_connect
-  password: <%= ENV["JOB_CONNECT_DATABASE_PASSWORD"] %>
+  password: job
