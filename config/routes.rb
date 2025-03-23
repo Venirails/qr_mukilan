@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get "admin/login"
+  get "admin/logout"
+  post "admin/login"
+  get "admin/aboutus"
+  get "admin/events"
   resources :job_seekers
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

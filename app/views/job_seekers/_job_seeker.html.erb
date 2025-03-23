@@ -1,8 +1,13 @@
 <div id="<%= dom_id job_seeker %>">
-
+<p>
 <%= image_tag job_seeker.profile_image ,height: "100",width: "100" %>
-<%= raw @qr_job_seeker %>
+<% if @job_seeker.profile_image.attached? %>
+<img src="data:image/png;base64,<%= @qr_job_seeker_image %>" alt="Job Seeker QR Code" width="100" height="100">
+<% else %>
+  <p>No image available</p>
+<% end %>
 
+</p>
 
   <p>
     <strong>Full name:</strong>
